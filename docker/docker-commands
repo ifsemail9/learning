@@ -10,22 +10,46 @@
     Log in to Docker Hub
     docker login
 
+    Allocate the MAX Memory
+    docker run --memory="256m" nginx
+
+    Allocate the MAX CPU
+    docker run --cpus=".5" nginx
+
 2. Docker container deployment
+
+    Pull an inage from the registory
+    docker pull <image name>
 
     Pull and run a Nginx server
     docker run -d -p 8080:80 --name webserver nginx
 
+    Start the stopped container
+    docker start [container-name]
+
+    Stop the started container
+    docker stop [container-name]
+
+    Kill the started container
+    docker kill [container-name]
+
     List the running containers
     docker ps
 
+    List the running containers
+    docker ps -a
+
+    Remove stopped containers
+    docker rm [container-name]
+
+    Remove all stopped containers
+    docker rm $(docker ps -a -q)
+
     Attach to the container
-    docker container exec -it  <container name> bash  
+    docker container exec -it <container name> bash  
 
         Exit [From container - by typing]
         exit
-
-    Stop the container
-    docker stop <container name>
 
     Remove the container from memory
     docker rm <Running container name>
@@ -40,3 +64,25 @@
 
     Delete the image
     docker rmi hello-world:v1
+
+    Get image info
+    docker image inspect [image-name]
+
+4. Practical
+
+    docker run -rm -itd -p 8080:80 --name webserver -v demo_volume:/app nginx
+    docker run -rm -itd -p 8080:80 --name webserver -v /home/apd/vol1:/app nginx
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+    page 20
+    # https://www.baeldung.com/ops/docker-volumes
+    # https://spacelift.io/blog/docker-volumes
