@@ -1,0 +1,8 @@
+Displays system information
+docker info
+
+Displays the system’s version
+docker version
+
+Log in to Docker Hub
+docker login
