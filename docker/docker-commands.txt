@@ -66,7 +66,7 @@
 
     Remove all the images not in use by any containers
     docker system prune -a
-    
+
 
 4. Docker Build
 
@@ -82,8 +82,8 @@
 
 5. Practical
 
-    docker run -rm -itd -p 8080:80 --name webserver -v demo_volume:/app nginx
-    docker run -rm -itd -p 8080:80 --name webserver -v /home/apd/vol1:/app nginx
+    docker run --rm -itd -p 8080:80 --name webserver -v demo_volume:/app nginx
+    docker run --rm -itd -p 8080:80 --name webserver -v /home/apd/vol1:/app nginx
 
    
    
