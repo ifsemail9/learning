@@ -16,6 +16,7 @@
     Allocate the MAX CPU
     docker run --cpus=".5" nginx
 
+
 2. Docker container deployment
 
     Pull an inage from the registory
@@ -36,7 +37,7 @@
     List the running containers
     docker ps
 
-    List the running containers
+    List the all stopped and running containers
     docker ps -a
 
     Remove stopped containers
@@ -51,11 +52,6 @@
         Exit [From container - by typing]
         exit
 
-    Remove the container from memory
-    docker rm <Running container name>
-
-    Remove the image
-    docker rmi nginx
 
 3. Images Handling
 
@@ -70,6 +66,7 @@
 
     Remove all the images not in use by any containers
     docker system prune -a
+    
 
 4. Docker Build
 
