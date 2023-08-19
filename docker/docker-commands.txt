@@ -78,9 +78,29 @@
 
     Tag an exiting image
     docker tag [image-name] [name:tag]
-    
 
-5. Practical
+5. Docker volumes
+
+    Create volumes
+    docker create volume [volume-name]
+
+    List volumes
+    docker volume ls
+    
+    Display volume info
+    docker volume inspect [volume-name]
+
+    Delete volume
+    docker volume rm [volume-name]
+
+    Remove all volumes which not mounted
+    docker volume prune
+
+
+
+
+
+X. Practical
 
     docker run --rm -itd -p 8080:80 --name webserver -v demo_volume:/app nginx
     docker run --rm -itd -p 8080:80 --name webserver -v /home/apd/vol1:/app nginx
@@ -95,6 +115,6 @@
    
    
    
-    page 20
+    page 29
     # https://www.baeldung.com/ops/docker-volumes
     # https://spacelift.io/blog/docker-volumes
