@@ -1,6 +1,8 @@
 GIT PUSH - With PAT
 --------------------
 
+git push https://<GITHUB_ACCESS_TOKEN>@github.com/<GITHUB_USERNAME>/<REPOSITORY_NAME>.git
+
 git push https://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@github.com/ifsemail9/learning.git
 
 Help
