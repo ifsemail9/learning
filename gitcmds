@@ -1,0 +1,41 @@
+Create a Remote Repository:
+On the server where you want to host your Git repository, create a new directory for your project (e.g., my_project.git).
+Navigate to the directory and initialize a bare Git repository:
+mkdir my_project.git
+cd my_project.git
+git --bare init
+
+Set Up Your Local Repository:
+On your local machine, create a new directory for your project (e.g., my_project).
+Initialize a Git repository inside this directory:
+mkdir my_project
+cd my_project
+git init
+
+Add and Commit Your Code:
+Add your project files to the local repository:
+git add .
+git commit -m "Initial commit"
+
+Configure the Remote Repository:
+Add the remote repository URL (replace <youruser> and <yourserver.com> with actual values):
+git remote add origin youruser@yourserver.com:/path/to/my_project.git
+
+Push Your Code:
+Push your local changes to the remote repository (usually the master branch):
+git push origin master
+
+Remember to replace placeholders like <youruser>, <yourserver.com>, and /path/to/my_project.git with your actual information.
+
+To view the remote URL of a Git repository, you can use the following command:
+
+git remote -v
+
+This command will display the URLs of all configured remotes, including both fetch and push URLs. The output will look something like this:
+
+origin  [6](https://github.com/OWNER/REPOSITORY.git) (fetch)
+origin  [6](https://github.com/OWNER/REPOSITORY.git) (push)
+
+Replace [6](https://github.com/OWNER/REPOSITORY.git) with the actual URL of your remote repository. If you specifically want to retrieve the URL for a particular remote (e.g., origin), you can use:
+
+git remote get-url origin
