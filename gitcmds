@@ -41,3 +41,13 @@ origin  [6](https://github.com/OWNER/REPOSITORY.git) (push)
 Replace [6](https://github.com/OWNER/REPOSITORY.git) with the actual URL of your remote repository. If you specifically want to retrieve the URL for a particular remote (e.g., origin), you can use:
 
 git remote get-url origin
+
+-----------------------------------------------------
+
+To view your global Git configuration, you can use the following command in your terminal or command prompt:
+
+git config --global --list
+
+This command will display all the configuration settings stored in your global Git configuration file. If you want to see where a specific setting is defined (whether it’s global, user-specific, or repository-specific), you can use:
+
+git config --list --show-origin
