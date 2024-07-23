@@ -27,6 +27,8 @@ git push origin master
 
 Remember to replace placeholders like <youruser>, <yourserver.com>, and /path/to/my_project.git with your actual information.
 
+---------------------------------------------------
+
 To view the remote URL of a Git repository, you can use the following command:
 
 git remote -v
